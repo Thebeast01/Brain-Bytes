@@ -16,7 +16,7 @@ const Navbar = () => {
                     <Link to="/">Home</Link>
                 </li>
                 <li className='rounded-full hover:bg-yellow-300 py-2 px-5'>
-                    <Link to="/" className='flex flex-row'>
+                    <Link to="/e-matetial" className='flex flex-row'>
                         <div>E-Material</div>
                        <IoMdArrowDropdown size={'1.1rem' } className='mt-2'/>
                     
@@ -26,17 +26,17 @@ const Navbar = () => {
                 {/* <div className='opacity-0 w-[50px] h-[20px] hover:opacity-100 bg-black'>fghfg</div> */}
 
                 <li className='rounded-full hover:bg-yellow-300 py-2 px-5'>
-                    <Link to="/" className='flex flex-row'>Courses
+                    <Link to="/courses" className='flex flex-row'>Courses
                     <IoMdArrowDropdown size={'1.1rem' } className='mt-2'/></Link>
                 </li>
                 <li className='rounded-full hover:bg-yellow-300 py-2 px-5'>
-                    <Link to="/">Blog</Link>
+                    <Link to="/blog">Blog</Link>
                 </li>
                 <li className='rounded-full hover:bg-yellow-300 py-2 px-5'>
-                    <Link to="/">Doubts</Link>
+                    <Link to="/doubt">Doubts</Link>
                 </li>
                 <li className='rounded-full hover:bg-yellow-300 py-2 px-5'>
-                    <Link to="/">About Us</Link>
+                    <Link to="/about">About Us</Link>
                 </li>
             </ul>
         </div>
