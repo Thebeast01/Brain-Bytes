@@ -38,8 +38,11 @@ const Header = () => {
           <div className="logo">
             <h2 className=" d-flex align-items-center gap-1">
               <i class="">
+              <div className="footer-logo">
+        <img src={footerLogo} alt="Company Logo" />
+      </div>
               {/* <img src={footerLogo} alt="Company Logo" /> */}
-              </i> LOGO
+              </i> 
             </h2>
           </div>
 
