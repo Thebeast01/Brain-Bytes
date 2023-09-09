@@ -1,14 +1,7 @@
-import AboutUs from "./components/AboutUs";
-import { DoubtForm } from "./components/DoubtForm";
-
+// import AboutUs from './components/AboutUs';
+import Home from "./pages/Home";
 function App() {
-  return (
-    <>
-      <div className="Container m-0 p-0 h-screen w-screen">
-        <AboutUs />
-      </div>
-    </>
-  );
+  return <Home />;
 }
 
 export default App;
