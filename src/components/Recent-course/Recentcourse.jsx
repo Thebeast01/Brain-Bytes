@@ -98,7 +98,41 @@ function Recentcourse() {
           <Dropdown.Item href="#">Menu Item</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
+     
 
+      <Dropdown className="d-inline mx-2" autoClose="inside">
+        <Dropdown.Toggle id="dropdown-autoclose-inside">
+          Clickable Outside
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+      <Dropdown className="d-inline mx-2" autoClose="inside">
+        <Dropdown.Toggle id="dropdown-autoclose-inside">
+          Clickable Outside
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+      <Dropdown className="d-inline mx-2" autoClose="inside">
+        <Dropdown.Toggle id="dropdown-autoclose-inside">
+          Clickable Outside
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+          <Dropdown.Item href="#">Menu Item</Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
       <Dropdown className="d-inline mx-2" autoClose="inside">
         <Dropdown.Toggle id="dropdown-autoclose-inside">
           Clickable Outside
