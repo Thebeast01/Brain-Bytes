@@ -68,7 +68,7 @@ export const DoubtForm = () => {
             placeholder="Ask your Doubt"
           ></textarea>
           <button
-            className="mx-24 mt-2 w-28 p-2 bg-yellow-300 rounded-md md:mx-36 text-white"
+            className=" sm:mx-20  mt-2 w-28 p-2 bg-yellow-300 rounded-md md:mx-28 lg:mx-40 xl:mx- text-white"
             type="submit"
           >
             Submit
