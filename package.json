@@ -19,6 +19,7 @@
     "reactstrap": "^9.2.0",
     "remixicon": "^3.5.0",
     "slick-carousel": "^1.8.1",
+    "swiper": "^10.2.0",
     "vite": "^4.4.9",
     "web-vitals": "^2.1.4"
   },
