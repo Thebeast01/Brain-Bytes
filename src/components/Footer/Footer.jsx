@@ -52,7 +52,7 @@ const Footer = () => {
   // const footerLogo ="../../assests/images/logo.jpg";
   return (
     <footer className="footer">
-      <Container>
+      {/* <Container> */}
         <Row>
           <Col lg="3" md="6" className="mb-4">
             <h2 className=" d-flex align-items-center gap-1">
@@ -127,7 +127,7 @@ const Footer = () => {
             <p>Email: example@gmail.com</p>
           </Col>
         </Row>
-      </Container>
+      {/* </Container> */}
     </footer>
   );
 };

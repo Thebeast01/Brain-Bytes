@@ -1,8 +1,12 @@
 import React from 'react';
 import '../Css/about-us.css';
-function AboutUs() {
+import Footer from "../components/Footer/Footer";
+import Navbar from "../components/Header/Header";
+function AboutUs (){
   return (
     <>
+    <Navbar/>
+    {/* <div className="about"> */}
       <div className="container  flex flex-col">
         <div className="content">
           <div className="content-item">
@@ -61,7 +65,7 @@ function AboutUs() {
             <span className="designation">Lorem, ipsum.</span>
           </div>
         </div>
-
+</div>
         {/*   Pilars sections  */}
         <h1 className="our-Pillers title-0">Our Pillars</h1>
         {/*  Video Editors   */}
@@ -166,14 +170,18 @@ function AboutUs() {
             <span className="name">Lorem.</span>
             <span className="designation">Lorem, ipsum.</span>
           </div>
-          <div className="developers">
+          {/* <div className="developers">
             <div className="web-developers-pictures photos"></div>
             <span className="name">Lorem.</span>
             <span className="designation">Lorem, ipsum.</span>
-          </div>
+          </div> */}
         </div>
-      </div>
+      {/* </div> */}
+      {/* </div> */}
+      {/* </div> */}
+      <Footer/>
     </>
+    
   );
 }
 
