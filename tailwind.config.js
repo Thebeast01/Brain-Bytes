@@ -8,7 +8,8 @@
 // };
 /**@type {import('tailwindcss').Config} */
 module.exports = {
-
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
+  mode: "jit",
   theme: {
     extend: {
       colors: {
@@ -31,3 +32,4 @@ module.exports = {
     },
   },
   plugins: [],
+};
