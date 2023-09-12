@@ -1,6 +1,12 @@
 .footer {
   background: rgba(246, 248, 226, 0.664);
+  /* position: absolute; */
+  /* bottom: 0;
+  width: 100%;
+  position: sticky; */
+  padding: 40px;
 }
+
 
 .follows span a {
   text-decoration: none;
