@@ -1,5 +1,4 @@
 import React, { Fragment } from "react";
-import Navbar from "../components/Header/Header";
 import Courses from "../components/Courses-section/Courses";
 
 
@@ -13,16 +12,13 @@ import NotificationSection from "../components/notification/notification";
 import Testimonials from "../components/Testimonial/Testimonials";
 import  Recentcourse from "../components/Recent-course/Recentcourse";
 import AboutUs from "../components/About-us/AboutUs";
+import Navbar from "../components/Header/Header";
 
 const Home = () => {
   return (
-
     <Fragment>
 
-      
-
-        <Navbar/>
-        
+        < Navbar/>
         <Slider />
         <AboutUs />
         
@@ -34,6 +30,8 @@ const Home = () => {
       <Recentcourse />
    <Footer />
    
+
+  
     </Fragment>
   );
 };
