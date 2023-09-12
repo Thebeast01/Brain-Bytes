@@ -96,7 +96,7 @@ const Footer = () => {
           </Col>
 
           <Col lg="3" md="6" className="mb-4">
-            <h6 className="fw-bold">Explore</h6>
+            <h6 className="fw-bold text-black">Explore</h6>
             <ListGroup className="link__list">
               {footerQuickLinks.map((item, index) => (
                 <ListGroupItem key={index} className="border-0 ps-0 link__item">
@@ -108,7 +108,7 @@ const Footer = () => {
           </Col>
 
           <Col lg="3" md="6" className="mb-4">
-            <h6 className="fw-bold">Information</h6>
+            <h6 className="fw-bold text-black">Information</h6>
             <ListGroup className="link__list">
               {footerInfoLinks.map((item, index) => (
                 <ListGroupItem key={index} className="border-0 ps-0 link__item">
@@ -120,7 +120,7 @@ const Footer = () => {
           </Col>
 
           <Col lg="3" md="6">
-            <h6 className="fw-bold">Get in Touch</h6>
+            <h6 className="fw-bold text-black">Get in Touch</h6>
 
             <p>Lucknow, INDIA</p>
             <p> Phone: +00 00000 00000</p>

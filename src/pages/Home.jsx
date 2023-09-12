@@ -22,7 +22,7 @@ const Home = () => {
         <Slider />
         <AboutUs />
         
-    <Courses />
+      <Courses />
       <Features />
       <Testimonials />
       <NotificationSection />
