@@ -15,7 +15,7 @@ const navLinks = [
     title: "E-Material",
   },
   {
-    id: "Ask Doubts",
+    id: "Doubt",
     title: "Ask Doubts",
   },
   {
@@ -25,20 +25,70 @@ const navLinks = [
  
 ];
 
+// const Navbar = () => {
+//   const [active, setActive] = useState("Home");
+//   const [toggle, setToggle] = useState(false);
+
+//   return (
+//     <div className=" w-screen h-28 border-2">
+//       <div className={`sm:px-16 px-6 my-7 flex justify-center items-center`}>
+//         <div className="w-full ">
+//           <nav className="w-full flex py-6  items-center navbar ">
+//             {/* Logo */}
+//             <h1 className="text-3xl bg-yellow-300 ">Logo</h1>
+
+//             {/* Desktop Navigation */}
+//             <ul className="list-none md:flex hidden items-center m-0 flex-1    position: absolute;">
+//               {navLinks.map((nav, index) => (
+//                 <li
+//                   key={nav.id}
+//                   className={`font-poppins font-normal cursor-pointer text-[16px] ${
+//                     active === nav.title ? "text-white" : "text-dimWhite"
+//                   } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
+//                   onClick={() => setActive(nav.title)}
+//                 >
+//                   <Link
+//                     className="no-underline text-lg text-black font-semibold p-2 hover:bg-yellow-300"
+//                     // href={`#${nav.id}`}
+//                     to={nav.id === "about" ? "/about" : `/${nav.id}`}
+                    
+//                 >
+                    
+//                    <Link
+//                     className="no-underline text-lg text-black font-semibold p-2 hover:bg-yellow-300"
+//                     // href={`#${nav.id}`}
+//                     to={nav.id === "Doubt" ? "/Doubt" : `/${nav.id}`}
+//                 >
+
+//                 </Link>
+//                 {nav.title}
+//                   </Link>
+//                     {/* {nav.title}
+//                   </Link> */}
+//                 </li>
+//               ))}
+//             </ul>
+
+
 const Navbar = () => {
   const [active, setActive] = useState("Home");
+  const [showCoursesTable, setShowCoursesTable] = useState(false);
   const [toggle, setToggle] = useState(false);
 
+  const toggleCoursesTable = () => {
+    setShowCoursesTable(!showCoursesTable);
+  };
+
   return (
-    <div className=" w-screen h-28 border-2">
+    <div className="w-screen h-28 border-2">
       <div className={`sm:px-16 px-6 my-7 flex justify-center items-center`}>
-        <div className="w-full ">
-          <nav className="w-full flex py-6  items-center navbar ">
+        <div className="w-full">
+          <nav className="w-full flex py-6 items-center navbar">
             {/* Logo */}
-            <h1 className="text-3xl bg-yellow-300 ">Logo</h1>
+            <h1 className="text-3xl bg-yellow-300">Logo</h1>
 
             {/* Desktop Navigation */}
-            <ul className="list-none md:flex hidden items-center m-0 flex-1    position: absolute;">
+            <ul className="list-none md:flex hidden items-center m-0 flex-1 position: absolute;">
               {navLinks.map((nav, index) => (
                 <li
                   key={nav.id}
@@ -48,16 +98,33 @@ const Navbar = () => {
                   onClick={() => setActive(nav.title)}
                 >
                   <Link
-                    className="no-underline text-lg text-black font-semibold p-2 hover:bg-yellow-300"
-                    // href={`#${nav.id}`}
-                    to={nav.id === "about" ? "/about" : `#${nav.id}`}
-                >
+                    className={`no-underline text-lg text-black font-semibold p-2 hover:bg-yellow-300 ${
+                      nav.id === "Courses" ? "relative" : ""
+                    }`}
+                    to={nav.id === "about" ? "/about" : `/${nav.id}`}
+                    onMouseEnter={() =>
+                      nav.id === "Courses" && toggleCoursesTable()
+                    }
+                    onMouseLeave={() =>
+                      nav.id === "Courses" && toggleCoursesTable()
+                    }
+                  >
                     {nav.title}
+                    {nav.id === "Courses" && showCoursesTable && (
+                      <div className="absolute bg-white border border-gray-300 p-2 mt-2 rounded-lg shadow-md flex  justify-center items-center z-50">
+                        <ul>
+                          <li className="text-black text-lg py-6 px-0 border-b border-white hover:bg-yellow-100"><Link to="/courses/class6">Class 6</Link></li>
+                          <li className="text-black text-lg py-6 px-0 border-b border-white hover:bg-yellow-100"><Link to="/courses/class7">Class 7</Link></li>
+                          <li className="text-black text-lg py-6 px-0 border-b border-white hover:bg-yellow-100"><Link to="/courses/class9">Class 8</Link></li>
+                          <li  className="text-black text-lg py-6 px-0 border-b border-white hover:bg-yellow-100"> <Link to="/courses/class8">Class 9</Link></li>
+                         
+                        </ul>
+                      </div>
+                    )}
                   </Link>
                 </li>
               ))}
             </ul>
-
             {/* Mobile Navigation */}
             <div className="md:hidden flex flex-1  items-center pl-4   " >
               <div

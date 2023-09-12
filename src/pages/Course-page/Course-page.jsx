@@ -1,6 +1,8 @@
 import React from 'react';
 import './CoursePage.css';
 import CourseBox from './CourseBox';
+import Footer from "../../components/Footer/Footer";
+import Navbar from "../../components/Header/Header";
 
 const coursesInfo = [
 	{
@@ -42,6 +44,9 @@ const coursesInfo = [
 ];
 function Coursepage() {
 	return (
+		<>
+		<Navbar />
+		
 		<div className='main'>
 			<h1 className='heading'>Explore Our Premium Courses</h1>
 			<div className='container-0'>
@@ -50,7 +55,11 @@ function Coursepage() {
 				))}
 			</div>
 		</div>
+		<Footer />
+	  </>
 	);
 }
+
+		
 
 export default Coursepage;
