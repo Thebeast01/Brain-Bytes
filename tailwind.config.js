@@ -19,6 +19,7 @@ module.exports = {
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },
       fontFamily: {
+        grotesk: ["Space Grotesk", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
       },
     },

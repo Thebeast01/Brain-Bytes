@@ -4,11 +4,15 @@ export const navLinks = [
     title: "All Courses",
   },
   {
+    id: "about",
+    title: "About-Us",
+  },
+  {
     id: "E-Material",
     title: "E-Material",
   },
   {
-    id: "Ask Doubts",
+    id: "Doubt",
     title: "Ask Doubts",
   },
   {
