@@ -2,7 +2,7 @@ import React from 'react';
 import './CoursePage.css';
 import CourseBox from './CourseBox';
 import Footer from "../../components/Footer/Footer";
-import Navbar from "../../components/Header/Header";
+import { Navbar } from '../../components/navbar';
 
 const coursesInfo = [
 	{

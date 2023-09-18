@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import './lg.css';
-import Navbar from '../../Header/Header';
+import { Navbar } from '../../navbar';
+import Footer from '../../Footer/Footer';
 const LoginSignup = () => {
 	const bgImg = require('../../../Assests/images/bgImg.jpg');
 
@@ -149,6 +150,7 @@ const LoginSignup = () => {
 					</div>
 				</div>
 			</div>
+			<Footer />
 		</>
 	);
 };

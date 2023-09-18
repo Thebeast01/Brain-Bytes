@@ -1,13 +1,13 @@
 import React from 'react';
 import './about-us.css';
 import Footer from '../../components/Footer/Footer';
-import Navbar from '../../components/Header/Header';
+import { Navbar } from '../../components/navbar';
 function AboutUs() {
 	return (
 		<>
 			<Navbar />
 			<div className='aboutContainer'>
-				<div className='container-0  '>
+				<div className='container-1  '>
 					<div className='about-usBox flex flex-col'>
 						<h1>About Us</h1>
 						<span>

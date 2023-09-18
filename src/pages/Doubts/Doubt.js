@@ -1,7 +1,7 @@
 import '../../index.css';
 import { DoubtForm } from './DoubtForm';
 import Footer from '../../components/Footer/Footer';
-import Navbar from '../../components/Header/Header';
+import { Navbar } from '../../components/navbar';
 const Doubt = () => {
 	return (
 		<>

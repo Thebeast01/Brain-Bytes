@@ -14,10 +14,10 @@ function App() {
 				<Route path='/about' component={AboutPage} />
 				<Route path='/Doubt' component={DoubtPage} />
 				{/* <Route path="/Course" component={CoursePage} /> */}
-				<Route path='/courses/class6' component={CoursePage} />
-				<Route path='/courses/class7' component={CoursePage} />
-				<Route path='/courses/class8' component={CoursePage} />
-				<Route path='/courses/class9' component={CoursePage} />
+				<Route path='/olympiad' component={CoursePage} />
+				<Route path='/boards' component={CoursePage} />
+				<Route path='/competitive' component={CoursePage} />
+				<Route path='/ncert' component={CoursePage} />
 				<Route path='/login' component={LoginSignup} />
 			</Switch>
 		</Router>
