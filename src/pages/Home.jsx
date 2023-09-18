@@ -7,7 +7,7 @@ import NotificationSection from "../components/notification/notification";
 import Testimonials from "../components/Testimonial/Testimonials";
 import Recentcourse from "../components/Recent-course/Recentcourse";
 import AboutUs from "../components/About-us/AboutUs";
-import Navbar from "../components/Header/Header";
+import { Navbar } from "../components/navbar";
 
 const Home = () => {
   return (
