@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Kumbh+Sans:wght@400;700&family=Noto+Sans&family=Overpass:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Kumbh+Sans:wght@400;700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans&family=Overpass:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@400;700&display=swap");
+
 /* About us Section starts here */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: #fff;
   color: rgb(255, 199, 0);
@@ -20,32 +22,58 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.Container {
+
+.container-0 {
+  background-image: linear-gradient(black, rgb(75, 74, 74));
+
+
+}
+
+.about-usBox {
+  height: 40vh;
   width: 100%;
-  margin: 3rem auto;
-  padding: -1px;
-  background-color: #fff;
-  color: Black;
-  /* display: flex; */
-  flex-direction: column;
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  overflow-x: hidden;
+
 }
-.picture {
-  width: 60vh;
-  height: 60vh;
-  background-image: url(https://images.unsplash.com/photo-1504593811423-6dd665756598?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 4rem;
-  align-self: center;
+
+.about-usBox span {
+  width: 6rem;
+  height: 5px;
+  color: white;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-right: 6px;
+  overflow: hidden;
 }
+
+.about-usBox>span>hr {
+  height: 5px;
+
+  outline: none;
+  border: none;
+  color: white;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.information {
+  margin: 5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 2.3rem;
+}
+
 .content-item {
   width: 60%;
   margin: 1rem;
 }
+
 .content {
   width: 100%;
   border-radius: 1rem;
@@ -63,38 +91,61 @@ body {
   color: black;
 }
 
+.team-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ⁡⁢⁢⁢Our team heading ⁡ */
 .main-team-section {
   height: 100%;
-  width: 100%;
+  width: fit-content;
   color: black;
+  margin-bottom: 2rem;
+
 }
+
 .member-box {
   box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.664);
   width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
 }
+
 .core-member {
+  height: 80vh;
+  overflow: hidden;
   display: flex;
-  justify-content: space-between;
-  padding: 0 2rem;
-  margin-bottom: 2rem;
-  /* 
-  border: 2px solid black; */
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 2rem;
+
 }
+
+.core-member img {
+  height: 90vh;
+  border-radius: 2rem;
+  background-color: black;
+  overflow: hidden;
+}
+
 .core-member-images {
   height: 12rem;
   width: 12rem;
-  border-radius: 50%; /* 
+  border-radius: 50%;
+  /* 
   border: 2px solid black; */
-  background-image: url(../Assests/images/member.jpg);
+  background-image: url(../../Assests/images/member.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
+
 .title-0 {
   height: 4rem;
   font-size: 3rem;
@@ -106,6 +157,7 @@ body {
   margin-bottom: 2rem;
   text-decoration: underline;
 }
+
 .members {
   display: flex;
   flex-direction: column;
@@ -113,6 +165,7 @@ body {
   align-items: center;
   padding: 1.5rem;
 }
+
 .name {
   display: flex;
   justify-content: center;
@@ -121,9 +174,11 @@ body {
   padding: 1rem;
   font-weight: 600;
 }
+
 .designation {
   font-weight: 600;
 }
+
 .pillar-member {
   display: flex;
   justify-content: space-between;
@@ -132,22 +187,26 @@ body {
   /* 
   border: 2px solid black; */
 }
+
 .video-editors {
   font-size: 2rem;
   padding: 1rem;
   text-transform: uppercase;
   font-family: "Montserrat";
 }
+
 .video-editors-image {
   height: 12rem;
   width: 12rem;
-  border-radius: 50%; /* 
+  border-radius: 50%;
+  /* 
   border: 2px solid black; */
-  background-image: url(../Assests/images/video.jpg);
+  background-image: url(../../Assests/images/video.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
+
 .Graphic-member {
   justify-content: space-between;
   padding: 0 2rem;
@@ -158,16 +217,19 @@ body {
   row-gap: 2rem;
   align-items: center;
 }
+
 .graphic-members {
   height: 12rem;
   width: 12rem;
-  border-radius: 50%; /* 
+  border-radius: 50%;
+  /* 
   border: 2px solid black; */
-  background-image: url(../Assests/images/graphic.jpg);
+  background-image: url(../../Assests/images/graphic.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
+
 .Graphic-designers {
   font-size: 2rem;
   padding: 1rem;
@@ -176,6 +238,7 @@ body {
   text-transform: uppercase;
   font-family: "Montserrat";
 }
+
 .graphic {
   display: flex;
   flex-direction: column;
@@ -183,12 +246,14 @@ body {
   align-items: center;
   padding: 1rem;
 }
+
 .Web-devs {
   font-size: 2rem;
   padding: 1rem;
   text-transform: uppercase;
   font-family: "Montserrat";
 }
+
 .web-dev-member {
   display: grid;
   justify-content: space-between;
@@ -198,15 +263,17 @@ body {
   grid-row: 50% 50%;
   row-gap: 2rem;
 }
+
 .web-developers-pictures {
   height: 12rem;
   width: 12rem;
   border-radius: 50%;
-  background-image: url(../Assests/images/developers.jpg);
+  background-image: url(../../Assests/images/developers.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
 }
+
 .developers {
   display: flex;
   flex-direction: column;
@@ -216,6 +283,10 @@ body {
   padding: 1rem;
 }
 
+.piller {
+  display: block;
+}
+
 @media (max-width: 786px) {
   .content {
     display: flex;
@@ -223,42 +294,63 @@ body {
     justify-content: center;
     align-items: center;
   }
+
   .video-editors {
     text-align: center;
   }
+
   .Graphic-designers {
     text-align: center;
   }
+
   .Web-devs {
     text-align: center;
   }
+
   .member-box {
     display: grid;
     width: 100vw;
     grid-template-columns: 50% 50%;
   }
 }
+
 @media (max-width: 480px) {
   .photos {
     height: 10rem;
     width: 10rem;
   }
+
   .title-0 {
     font-size: 1.7rem;
   }
+
   .title-1 {
     font-size: 1.3rem;
   }
 }
+
 @media (max-width: 375px) {
   .photos {
     height: 7rem;
     width: 7rem;
   }
 }
+
 @media (max-width: 425px) {
   .picture {
     height: 30vh;
     width: 30vh;
   }
+}
+
+@media (max-width : 1024px) {
+  .picture {
+    height: 20vh;
+    width: 20vh;
+  }
+
+  .member-box {
+    height: max-content;
+  }
+
 }
