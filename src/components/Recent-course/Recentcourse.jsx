@@ -1,92 +1,10 @@
 import React from "react";
-
-// const Recentcourses = () => {
-//   return (
-//     <div className="section">
-//       <div className="top-courses">
-//         <div className="top10">
-//           <h5 style={{ fontFamily: "Source Sans Pro, sans-serif" }}>
-//             Top-Courses
-//           </h5>
-//           <a href="" className="top-courses_content">
-//             web development
-//           </a>
-//           <br />
-//           <a href="" className="top-courses_content">
-//             python programming
-//           </a>
-//           <br />
-//           <a href="" className="top-courses_content">
-//             java
-//           </a>
-//           <br />
-//         </div>
-//       </div>
-//       <div className="top-courses">
-//         <div className="top10">
-//           <h5 style={{ fontFamily: "Source Sans Pro, sans-serif" }}>
-//             Quizes/Exercises
-//           </h5>
-//           <a href="" className="top-courses_content">
-//             HTML Reference
-//           </a>
-//           <br />
-//           <a href="" className="top-courses_content">
-//             HTML Reference
-//           </a>
-//           <br />
-//           <a href="" className="top-courses_content">
-//             HTML Reference
-//           </a>
-//           <br />
-//         </div>
-//       </div>
-//       <div className="top-courses">
-//         <div className="top10">
-//           <h5 style={{ fontFamily: "Source Sans Pro, sans-serif" }}>
-//             NCERT Books
-//           </h5>
-//           <a href="" className="top-courses_content">
-//             HTML Reference
-//           </a>
-//           <br />
-//           <a href="" className="top-courses_content">
-//             HTML Reference
-//           </a>
-//           <br />
-//           <a href="" className="top-courses_content">
-//             HTML Reference
-//           </a>
-//           <br />
-//         </div>
-//       </div>
-//       <div className="top-courses">
-//         <div className="top10">
-//           <h5 style={{ fontFamily: "Source Sans Pro, sans-serif" }}>
-//             Notes/Video
-//           </h5>
-//           <a href="" className="top-courses_content">
-//             HTML Reference
-//           </a>
-//           <br />
-//           <a href="" className="top-courses_content">
-//             HTML Reference
-//           </a>
-//           <br />
-//           <a href="" className="top-courses_content">
-//             HTML Reference
-//           </a>
-//           <br />
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-import Dropdown from 'react-bootstrap/Dropdown';
+import Dropdown from "react-bootstrap/Dropdown";
+import "./recentcourse.css";
 
 function Recentcourse() {
   return (
-    <>
+    <div className="recent-courses-container">
       <Dropdown className="d-inline mx-2">
         <Dropdown.Toggle id="dropdown-autoclose-true">
           Default Dropdown
@@ -98,7 +16,6 @@ function Recentcourse() {
           <Dropdown.Item href="#">Menu Item</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
-     
 
       <Dropdown className="d-inline mx-2" autoClose="inside">
         <Dropdown.Toggle id="dropdown-autoclose-inside">
@@ -168,7 +85,7 @@ function Recentcourse() {
           <Dropdown.Item href="#">Menu Item</Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
-    </>
+    </div>
   );
 }
 
