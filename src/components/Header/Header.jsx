@@ -3,13 +3,13 @@ import { navLinks } from "../../constants";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [active, setActive] = useState("Home");
-  const [showCoursesTable, setShowCoursesTable] = useState(false);
-  const [toggle, setToggle] = useState(false);
+	const [active, setActive] = useState('Home');
+	const [showCoursesTable, setShowCoursesTable] = useState(false);
+	const [toggle, setToggle] = useState(false);
 
-  const toggleCoursesTable = () => {
-    setShowCoursesTable(!showCoursesTable);
-  };
+	const toggleCoursesTable = () => {
+		setShowCoursesTable(!showCoursesTable);
+	};
 
   return (
     <div className="w-screen h-28 border-2  font-grotesk">

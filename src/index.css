@@ -58,3 +58,18 @@ input {
   padding-inline-start: 10px;
   height: 3rem;
 }
+#root {
+  overflow-x: hidden;
+}
+
+/* Form CSS starts here :  */
+
+.form-container {
+  box-shadow: .5rem .5rem .5rem rgb(36, 35, 35);
+}
+
+.form-heading {
+  font-size: 2rem;
+  font-weight: 400;
+  color: rgb (255, 199, 0);
+}
