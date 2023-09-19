@@ -25,22 +25,22 @@ export const courseNavlinks = [
   {
     id: "olympiad",
     title: "Olympiad",
-    link: "/olympiad",
+    link: "olympiad",
   },
   {
     id: "boards",
     title: "ICSE/CBSE",
-    link: "/boards",
+    link: "boards",
   },
   {
     id: "competitive",
     title: "IIT-JEE/NEET",
-    link: "/competitive",
+    link: "competitive",
   },
   {
     id: "ncert",
     title: "NCERT Solutions",
-    link: "/ncert",
+    link: "ncert",
   },
 ];
 
